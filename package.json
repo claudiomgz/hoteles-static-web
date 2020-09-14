@@ -1,0 +1,16 @@
+{
+  "name": "projecto-bootstrap",
+  "version": "1.0.0",
+  "description": "coursera",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://claudiomgz@bitbucket.org/claudiomgz/claudio.git"
+  },
+  "author": "Claudio Monguzzi",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/claudiomgz/claudio#readme"
+}
