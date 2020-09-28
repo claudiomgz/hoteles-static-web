@@ -1,5 +1,23 @@
 .jumbotron {
-    background-color: rgba(15, 151, 214, 0.918);
+    background-color: rgb(23, 162, 184);
     color: white;
     border-radius: 0%;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    background-color: rgb(18, 139, 158);
+}
+
+.card-hotel {
+    flex: 1 150px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.btn-reserva {
+    width: 100%;
 }
