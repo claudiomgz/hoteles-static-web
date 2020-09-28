@@ -21,3 +21,16 @@ footer {
 .btn-reserva {
     width: 100%;
 }
+
+address {
+    text-align: center;
+}
+
+a, address{
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
