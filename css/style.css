@@ -1,14 +1,20 @@
 .jumbotron {
-    background-color: rgb(23, 162, 184);
+    background-color: #343a40;
     color: white;
     border-radius: 0%;
+    margin-top: 55px;
 }
 
 footer {
     padding: 10px 10px 0 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10px;
-    background-color: rgb(18, 139, 158);
+    background-color: #343a40;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card-hotel {
@@ -32,5 +38,5 @@ a, address{
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: rgb(179, 179, 179);
 }
