@@ -19,6 +19,7 @@
     />
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/hotel.png" type="image/png">
     <title>Nosotros - Hoteles del Sur</title>
   </head>
   <body>
@@ -60,80 +61,152 @@
           <li class="breadcrumb-item active" aria-current="page">Precios</li>
         </ol>
       </nav>
-      <div class="table-responsive">
-        <table class="table table-striped table-light">
-          <thead class="thead-dark">
-            <tr>
-              <th>Calidad</th>
-              <th>Nelson</th>
-              <th>Paiva</th>
-              <th>Candioti</th>
-              <th>Manucho</th>
-              <th>Llambi</th>
-              <th>Santa Fe</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="oi oi-star"></span></td>
-              <td><span class="oi oi-dollar"></span>5000</td>
-              <td><span class="oi oi-dollar"></span>7800</td>
-              <td><span class="oi oi-dollar"></span>9000</td>
-              <td><span class="oi oi-dollar"></span>11000</td>
-              <td><span class="oi oi-dollar"></span>12500</td>
-              <td><span class="oi oi-dollar"></span>15000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span><span class="oi oi-star"></span>
-              </td>
-              <td><span class="oi oi-dollar"></span>7000</td>
-              <td><span class="oi oi-dollar"></span>8800</td>
-              <td><span class="oi oi-dollar"></span>9800</td>
-              <td><span class="oi oi-dollar"></span>16000</td>
-              <td><span class="oi oi-dollar"></span>18500</td>
-              <td><span class="oi oi-dollar"></span>19000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span><span class="oi oi-star"></span
-                ><span class="oi oi-star"></span>
-              </td>
-              <td><span class="oi oi-dollar"></span>8000</td>
-              <td><span class="oi oi-dollar"></span>7500</td>
-              <td><span class="oi oi-dollar"></span>9000</td>
-              <td><span class="oi oi-dollar"></span>18000</td>
-              <td><span class="oi oi-dollar"></span>19500</td>
-              <td><span class="oi oi-dollar"></span>20000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span><span class="oi oi-star"></span
-                ><span class="oi oi-star"></span
-                ><span class="oi oi-star"></span>
-              </td>
-              <td><span class="oi oi-dollar"></span>9000</td>
-              <td><span class="oi oi-dollar"></span>8500</td>
-              <td><span class="oi oi-dollar"></span>10000</td>
-              <td><span class="oi oi-dollar"></span>19000</td>
-              <td><span class="oi oi-dollar"></span>20500</td>
-              <td><span class="oi oi-dollar"></span>25000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span><span class="oi oi-star"></span
-                ><span class="oi oi-star"></span><span class="oi oi-star"></span
-                ><span class="oi oi-star"></span>
-              </td>
-              <td><span class="oi oi-dollar"></span>10000</td>
-              <td><span class="oi oi-dollar"></span>11000</td>
-              <td><span class="oi oi-dollar"></span>12000</td>
-              <td><span class="oi oi-dollar"></span>20000</td>
-              <td><span class="oi oi-dollar"></span>21500</td>
-              <td><span class="oi oi-dollar"></span>28000</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Lista de tabs -->
+      <ul class="nav nav-pills nav-justified" id="mitab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            data-toggle="tab"
+            aria-selected="true"
+            href="#comparativa"
+            >Comparativa</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-toggle="tab"
+            aria-selected="false"
+            href="#metodosdepago"
+            >Metodos de pago</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-toggle="tab"
+            aria-selected="false"
+            href="#promociones"
+            >Promociones</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="comparativa"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="table-responsive">
+            <table class="table table-striped table-light">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Calidad</th>
+                  <th>Nelson</th>
+                  <th>Paiva</th>
+                  <th>Candioti</th>
+                  <th>Manucho</th>
+                  <th>Llambi</th>
+                  <th>Santa Fe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="oi oi-star"></span></td>
+                  <td><span class="oi oi-dollar"></span>5000</td>
+                  <td><span class="oi oi-dollar"></span>7800</td>
+                  <td><span class="oi oi-dollar"></span>9000</td>
+                  <td><span class="oi oi-dollar"></span>11000</td>
+                  <td><span class="oi oi-dollar"></span>12500</td>
+                  <td><span class="oi oi-dollar"></span>15000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span>
+                  </td>
+                  <td><span class="oi oi-dollar"></span>7000</td>
+                  <td><span class="oi oi-dollar"></span>8800</td>
+                  <td><span class="oi oi-dollar"></span>9800</td>
+                  <td><span class="oi oi-dollar"></span>16000</td>
+                  <td><span class="oi oi-dollar"></span>18500</td>
+                  <td><span class="oi oi-dollar"></span>19000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span>
+                  </td>
+                  <td><span class="oi oi-dollar"></span>8000</td>
+                  <td><span class="oi oi-dollar"></span>7500</td>
+                  <td><span class="oi oi-dollar"></span>9000</td>
+                  <td><span class="oi oi-dollar"></span>18000</td>
+                  <td><span class="oi oi-dollar"></span>19500</td>
+                  <td><span class="oi oi-dollar"></span>20000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span>
+                  </td>
+                  <td><span class="oi oi-dollar"></span>9000</td>
+                  <td><span class="oi oi-dollar"></span>8500</td>
+                  <td><span class="oi oi-dollar"></span>10000</td>
+                  <td><span class="oi oi-dollar"></span>19000</td>
+                  <td><span class="oi oi-dollar"></span>20500</td>
+                  <td><span class="oi oi-dollar"></span>25000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span
+                    ><span class="oi oi-star"></span>
+                  </td>
+                  <td><span class="oi oi-dollar"></span>10000</td>
+                  <td><span class="oi oi-dollar"></span>11000</td>
+                  <td><span class="oi oi-dollar"></span>12000</td>
+                  <td><span class="oi oi-dollar"></span>20000</td>
+                  <td><span class="oi oi-dollar"></span>21500</td>
+                  <td><span class="oi oi-dollar"></span>28000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="metodosdepago"
+          role="tabpanel"
+          aria-labelledby="metodosdepago-tab"
+        >
+          <div class="d-flex justify-content-center">
+            <div class="card">
+              <div class="card-header thead-dark">Tarjetas Aceptadas</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">MasterCard</li>
+                <li class="list-group-item">Visa</li>
+                <li class="list-group-item">MercadoPago</li>
+                <li class="list-group-item">Cabal</li>
+                <li class="list-group-item">Ualá</li>
+                <li class="list-group-item">Banco Nación</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="promociones"
+          role="tabpanel"
+          aria-labelledby="promociones-tab"
+        >
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum eius vitae tempora amet temporibus rem, cum saepe unde quo velit doloremque dolores error esse enim ex. Error natus laborum veritatis praesentium ea odit iste quis explicabo ad odio porro, aut sed quo quibusdam beatae ipsa cupiditate, repellat necessitatibus, asperiores nobis! Iste iusto officia consequuntur in perferendis, perspiciatis labore repudiandae atque dolorem veniam facilis dicta facere doloribus aliquam omnis incidunt possimus laboriosam sit. Assumenda, nemo obcaecati itaque reiciendis illum architecto velit harum quasi vero veniam! Laboriosam magni voluptas velit rem ipsam debitis, fugiat dolor optio architecto porro fugit vitae deleniti.</p>
+        </div>
       </div>
     </div>
     <footer>

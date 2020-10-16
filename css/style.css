@@ -13,11 +13,34 @@
     opacity: 0.85;
 }
 
-footer {
-    padding: 10px 10px 0 10px;
-    margin-bottom: 0;
-    margin-top: 10px;
+.breadcrumb {
+    background-color: #585d63;
+}
+
+.breadcrumb-item.active {
+    color: #e9ecef;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-pills .nav-link.active {
     background-color: #343a40;
+    margin-bottom: 16px;
+}
+
+.nav-link:hover {
+    color: #585d63;
+}
+
+.thead-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.list-group-item {
+    align-self: center;
 }
 
 .row {
@@ -49,4 +72,11 @@ a, address{
 a:hover {
     text-decoration: none;
     color: rgb(179, 179, 179);
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    background-color: #343a40;
 }
