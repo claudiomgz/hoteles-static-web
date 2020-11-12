@@ -5,8 +5,7 @@
 }
 
 .display-4 {
-    color: black;
-    background-color: #e9ecef;
+    color: white;
     border-radius: 10px;
     width: 24rem;
     text-align: center;
@@ -33,6 +32,12 @@
 
 .nav-link:hover {
     color: #585d63;
+}
+
+.carousel-item{
+    min-height: 200px;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .thead-dark {
