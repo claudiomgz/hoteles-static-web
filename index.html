@@ -18,7 +18,7 @@
       href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"
     />
     <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="images/hotel.png" type="image/png" />
     <title>Bienvenido - Hoteles del Sur</title>
   </head>
@@ -130,32 +130,59 @@
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/carousel-barsa.jpg" class="d-block w-100" alt="hotel barcelona">
+            <img
+              src="images/carousel-barsa.jpg"
+              class="d-block w-100"
+              alt="hotel barcelona"
+            />
             <div class="carousel-caption d-none d-md-block bg-dark rounded">
               <h5>Hotel Barcelona Center</h5>
-              <p>La mejor zona de confort en España con un estilo rústico y relajante.</p>
+              <p>
+                La mejor zona de confort en España con un estilo rústico y
+                relajante.
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel-dubai.jpg" class="d-block w-100" alt="hotel dubai">
+            <img
+              src="images/carousel-dubai.jpg"
+              class="d-block w-100"
+              alt="hotel dubai"
+            />
             <div class="carousel-caption d-none d-md-block bg-dark rounded">
               <h5>Hotel Dubai Plaza</h5>
               <p>Ubicado en las costas de Dubai con mas de 300 habitaciones.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel-ba.jpg" class="d-block w-100" alt="hotel buenos aires">
+            <img
+              src="images/carousel-ba.jpg"
+              class="d-block w-100"
+              alt="hotel buenos aires"
+            />
             <div class="carousel-caption d-none d-md-block bg-dark rounded">
               <h5>Hotel Buenos Aires Resort</h5>
-              <p>En las costas del Océano Atlántico con un servicio espectacular.</p>
+              <p>
+                En las costas del Océano Atlántico con un servicio espectacular.
+              </p>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <a
+          class="carousel-control-prev"
+          href="#carousel"
+          role="button"
+          data-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <a
+          class="carousel-control-next"
+          href="#carousel"
+          role="button"
+          data-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Siguiente</span>
         </a>
@@ -184,6 +211,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -214,6 +242,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -243,6 +272,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -272,6 +302,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -300,6 +331,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -329,6 +361,7 @@
           <div>
             <button
               type="button"
+              id="contactoBtn"
               class="btn btn-info btn-reserva"
               data-toggle="modal"
               data-target="#enviarcorreo"
@@ -434,8 +467,27 @@
       $(function () {
         $('[data-toggle="popover"]').popover();
       });
-      $('.carousel').carousel({
-        interval: 2500
+      $(".carousel").carousel({
+        interval: 2500,
+      });
+
+      $('#enviarcorreo').on('show.bs.modal', function(e){
+        console.log('el modal de contacto se está mostrando');
+        $('#contactoBtn').removeClass('btn-info');
+        $('#contactoBtn').addClass('btn-primary');
+        $('#contactoBtn').prop('disabled', true);
+      });
+      $('#enviarcorreo').on('shown.bs.modal', function(e){
+        console.log('el modal de contacto se mostró');
+      });
+      $('#enviarcorreo').on('hide.bs.modal', function(e){
+        console.log('el modal de contacto se está ocultando');
+      });
+      $('#enviarcorreo').on('hidden.bs.modal', function(e){
+        console.log('el modal de contacto se ocultó');
+        $('#contactoBtn').removeClass('btn-primary');
+        $('#contactoBtn').addClass('btn-info');
+        $('#contactoBtn').prop('disabled', false);
       });
     </script>
   </body>
