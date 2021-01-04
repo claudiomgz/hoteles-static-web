@@ -1,0 +1,14 @@
+$yellow: #ebe725;
+$red: #f82626;
+$green: #2cb627;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+
+footer {
+    background-color: $red;
+    @include margenes(50px, 0px);
+}
