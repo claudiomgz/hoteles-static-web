@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -17,9 +18,9 @@
       rel="stylesheet"
       href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"
     />
-    <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-sass.css" />
+    <!--  endbuild -->
     <link rel="shortcut icon" href="images/hotel.png" type="image/png" />
     <title>Bienvenido - Hoteles del Sur</title>
   </head>
@@ -458,8 +459,9 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
       $(function () {
@@ -491,5 +493,6 @@
         $('#contactoBtn').prop('disabled', false);
       });
     </script>
+    <!-- endbuild -->
   </body>
 </html>
