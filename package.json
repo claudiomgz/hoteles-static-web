@@ -24,11 +24,16 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.3.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "htmlmin": "^0.0.7",
     "lite-server": "^2.3.0",
     "node-sass": "^5.0.0",
     "onchange": "^7.1.0",
     "rimraf": "^3.0.2",
+    "ruby": "^0.6.1",
+    "sass": "^1.32.4",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.6.0"
   },
